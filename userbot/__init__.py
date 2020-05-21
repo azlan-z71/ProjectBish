@@ -40,8 +40,8 @@ if version_info[0] < 3 or version_info[1] < 8:
 
 # Check if the config was edited by using the already used variable.
 # Basically, its the 'virginity check' for the config file ;)
-CONFIG_CHECK = os.environ.get(
-    "___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+CONFIG_CHECK = os.environ.get("", None)
+    
 
 if CONFIG_CHECK:
     LOGS.info(
@@ -50,15 +50,15 @@ if CONFIG_CHECK:
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY", None)
-API_HASH = os.environ.get("API_HASH", None)
+API_KEY = os.environ.get("API_KEY", 1209798)
+API_HASH = os.environ.get("API_HASH", bfd0e041934dcdcf22db3661339eb41c)
 
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION", None)
+STRING_SESSION = os.environ.get("STRING_SESSION", 1AZWarzoBu1R0oj0m1TdE0iU2QUF2xyjdCs80V8lTFW7W5cb-9eRwLpQvxM5ITEC1dWY743U40ubsCZcpHWIJGx6wLJw80m5ySV6Q2VMo5xuu3OCJcpTLPMp2VNnfqewKa-ewF-LkqyNhCcTVSfKl-RpIuA7WFEpRSm17WqaPPU65UDiTdBQ750Y6SAaikCd5KfuVMGBMD7BOKmeteE3_utWzcPIiJ_x-3PnJmf64Co_rd3Pic1f8frrypUhsnZ0upE5iZ_gRzq03TySqMYFkEbvldWKBRj_8CRRlpExtONiJMUZeIGeV4Y7KwqeCM0I4nKXcH3TDsj07i3n-zjiUl5juaKedmcc=)
 
 # Logging channel/group ID configuration.
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", -372375208))
 
 # Userbot logging feature switch.
 BOTLOG = sb(os.environ.get("BOTLOG", "False"))
@@ -68,8 +68,8 @@ LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
 # Heroku Credentials for updater.
-HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
+HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", z-userbot)
+HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", cced33d6-7654-4920-978d-15c6c0ecde77)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
@@ -92,7 +92,7 @@ OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
 TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+ALIVE_NAME = os.environ.get("ALIVE_NAME", Zafran)
 
 # remove.bg API key
 REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
@@ -113,7 +113,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+ALIVE_NAME = os.environ.get("ALIVE_NAME", Zafran)
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", ""))
