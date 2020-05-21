@@ -217,9 +217,9 @@ with bot:
         quit(1)
 
 # Global Variables
-COUNT_MSG = 0
+COUNT_MSG = {1}
 USERS = {userid}
-COUNT_PM = {}
+COUNT_PM = {1}
 LASTMSG = {}
 CMD_HELP = {}
 ISAFK = True
