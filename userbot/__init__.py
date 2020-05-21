@@ -113,7 +113,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", Zafran)
+ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", ""))
@@ -218,7 +218,7 @@ with bot:
 
 # Global Variables
 COUNT_MSG = 0
-USERS = {}
+USERS = {userid}
 COUNT_PM = {}
 LASTMSG = {}
 CMD_HELP = {}
