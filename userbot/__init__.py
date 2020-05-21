@@ -92,7 +92,7 @@ OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
 TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", Zafran)
+ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # remove.bg API key
 REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
@@ -113,7 +113,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", Zafran)
+ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", ""))
